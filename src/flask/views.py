@@ -113,7 +113,7 @@ class MethodViewType(type):
     defines.
     """
 
-    def __init__(cls, name, bases, d):
+    def __init__(cls, name, bases, d, **kwargs):
         super(MethodViewType, cls).__init__(name, bases, d)
 
         if "methods" not in d:
